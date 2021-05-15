@@ -1,0 +1,32 @@
+\usetheme{Warsaw}% установка темы
+\usecolortheme{orchid}% цвет темы
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[OT1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{alltt}
+\usepackage{verbatim}
+\usepackage{xcolor}
+\usepackage{minted}
+\usepackage{tikz}
+\usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\usemintedstyle{xcode}
+\usepackage{geometry} % Меняем поля страницы
+\geometry{left=1.5cm}% левое поле
+\geometry{right=1.5cm}% правое поле
+
+
+% отдельная команда для вставки изображения. 
+% Вызов: \inputimage{45.25mm}{zb}{Пример} 
+% 1.ширина 2. название файла 3. название подписи к изображению
+\newcommand{\inputimage}[3]
+{
+\begin{figure}[h]
+\center{\includegraphics[width=#1]{#2}}
+\caption{#3}
+\label{ris:#2}
+\end{figure}
+}
